@@ -2,22 +2,27 @@ const FeedbackData = [
   {
     id: 1,
     rating: 10,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+    text: "This is the best product you can possibly buy for this price!",
   },
   {
     id: 2,
     rating: 9,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+    text: "I switched to using this product from year of using another. I never regretted that decision!",
   },
   {
     id: 3,
     rating: 8,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+    text: "There are just so many similar types of products on the market, but this is a cut above the rest. Highly recommended!",
   },
   {
     id: 4,
     rating: 7,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.'
+    text: "This product is great, just need the price to be lower!"
+  },
+  {
+    id: 5,
+    rating: 8,
+    text: "I'm loving this product!"
   },
 
 ]
