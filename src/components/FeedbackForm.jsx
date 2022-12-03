@@ -14,7 +14,7 @@ const FeedbackForm = () => {
   // - if no text is entered, disable the submit button component (through the setBtnDisabled prop).
   // - if text is entered but the number of characters is less than 10, disable submit button and set alert msg.
   // - if the criteria of text entered is > 10 characters, remove any alert message and enable the submit button.
-  const handTextChange = e => {
+  const handleTextChange = e => {
     if (text.length <= 1) {
       setBtnDisabled(true)
       setMessage(null)
@@ -47,7 +47,7 @@ const FeedbackForm = () => {
         <RatingSelect select={setRating} selected={rating} />
         <div className="input-group">
           <input
-            onChange={handTextChange}
+            onChange={handleTextChange}
             type='text'
             placeholder="Write a review" 
             value={text}
