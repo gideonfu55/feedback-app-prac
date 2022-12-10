@@ -1,14 +1,17 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import RatingSelect from "./RatingSelect"
 import Button from "./shared/Button"
 import Card from "./shared/Card"
+import FeedbackContext from "../context/FeedbackContext"
 
-const FeedbackForm = ({handleAdd}) => {
+const FeedbackForm = () => {
 
   const [text, setText] = useState('')
   const [rating, setRating] = useState(10)
   const [btnDisabled, setBtnDisabled] = useState(true)
   const [message, setMessage] = useState('')
+
+  const {addFeedback} = useContext(FeedbackContext)
 
   // For the review submission box input text, you have the following requirements:
   // - if no text is entered, disable the submit button component (through the setBtnDisabled prop).
@@ -36,7 +39,7 @@ const FeedbackForm = ({handleAdd}) => {
         rating,
       }
 
-      handleAdd(newFeedback)
+      addFeedback(newFeedback)
       setText('')
     }
   }
